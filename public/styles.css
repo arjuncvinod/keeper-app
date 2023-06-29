@@ -11,20 +11,20 @@ body {
   padding: 0 16px;
 }
 
-Header {
+header {
   background-color: #f5ba13;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-Header h1 {
+header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
 
-Footer {
+footer {
   position: absolute;
   text-align: center;
   bottom: 0;
@@ -32,7 +32,7 @@ Footer {
   height: 2.5rem;
 }
 
-Footer p {
+footer p {
   color: #ccc;
 }
 .note {

@@ -1,6 +1,9 @@
 import React from "react";
 
 function header() {
-  return <h1>Keeper App</h1>;
+  return( 
+  <header>
+  <h1>Keeper</h1>
+  </header>)
 }
 export default header;
