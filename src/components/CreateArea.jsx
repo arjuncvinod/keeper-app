@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CreateArea() {
+function CreateArea(props) {
 
   const [note,setNote]=useState({
    title:"",
@@ -13,9 +13,15 @@ function CreateArea() {
     setNote((preValue)=>{
       return({
       ...preValue,
-      [name]: name})
+      [name]: value})
     })
 
+  }
+
+  function noteSubmit(event){
+
+    props.onAdd(note);
+    event.preventDefault()
   }
 
   return (
@@ -28,7 +34,7 @@ function CreateArea() {
           rows="3"
           onChange={handleChange} 
         />
-        <button>Add</button>
+        <button onClick={noteSubmit}>Add</button>
       </form>
     </div>
   );
