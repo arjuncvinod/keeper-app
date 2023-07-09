@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
 
 function CreateArea(props) {
 
@@ -38,7 +39,7 @@ function CreateArea(props) {
           rows="3"
           onChange={handleChange} value={note.content}
         />
-        <button onClick={noteSubmit}>Add</button>
+        <button onClick={noteSubmit}><AddIcon /></button>
       </form>
     </div>
   );
